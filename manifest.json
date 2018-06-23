@@ -7,7 +7,11 @@
     {
         "scripts" :
         [
-           "background.js"
+           "background.js", "live-background.js", 
+           "jsonQ.min.js",
+           "lodash.js",
+           "difference.js",
+           "moment.js"
         ],
         "persistent" : false
     },
@@ -31,10 +35,6 @@
      "matches": ["<all_urls>"],
      "js": [
          "jquery.js", 
-         "jsonQ.min.js", 
-         "lodash.js", 
-         "difference.js", 
-         "moment.js", 
          "get-live.js"
         ],
      "css" : ["goal.css"]

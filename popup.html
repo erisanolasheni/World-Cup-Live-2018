@@ -9,6 +9,7 @@
             width: 500px;
             height: 500px;
             margin: 0;
+            padding: 0;
         }
         body *
         {
@@ -21,6 +22,7 @@
             border: 0;
             margin: 0;
             padding: 0;
+            display: none;
         }
         .app-head
         {
@@ -51,10 +53,10 @@
 </head>
 
 <body>
-    <div class="app-head">World Cup 2018 Live Scores <select class="option-select">
+    <div class="app-head">World Cup Live 2018<select class="option-select">
+        <option value="live">Live Match</option>
         <option value="#">Phases</option>
 <option value="#/matches">Matches</option>
-        <option value="live">Live Match</option>
         <option value="#/stadiums">Stadiums</option>
     </select></div>
 <iframe src="https://worldcup.aarhof.eu/" class="app-frame"></iframe>

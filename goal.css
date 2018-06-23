@@ -20,7 +20,6 @@
     padding: 4px;
     font-family: Arial, Helvetica, sans-serif !important;
     color: #333 !important;
-    display: none;
     font-size: 2em !important;
 }
 .liveDiv *
@@ -64,6 +63,7 @@
     font-family: consolas, monospace !important;
     text-align: center;
     font-size: 2em;
+    padding-top: 2em;
 }
 .goal
 {
@@ -82,7 +82,7 @@
     font-size: inherit !important;
     border:0;
     padding: 8px;
-    margin: 8px auto;
+    margin: 2em auto;
     border-collapse: collapse;
 }
 .recordTable td
