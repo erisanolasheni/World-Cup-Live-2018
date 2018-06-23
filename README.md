@@ -1,5 +1,5 @@
-# <img src="https://i.imgur.com/Mf0bJtu.png" alt="World Cup Live 2018 Logo" /> World Cup Live 2018 Chrome Extension
-World Cup Live 2018 is a fantastic chrome browser extension that keeps you up-to-date to the current 2018 World Cup fixtures including live score updates and more!
+#  World Cup Live 2018 Chrome Extension
+<img src="https://i.imgur.com/Mf0bJtu.png" alt="World Cup Live 2018 Logo" /> World Cup Live 2018 is a fantastic chrome browser extension that keeps you up-to-date to the current 2018 World Cup fixtures including live score updates and more!
 
 ## Installation
 To install the World Cup Live 2018 Chrome Extension, download the zip file now or clone with git clone . After successful download or pull, open your Google Chrome or any other Chromium project browser, then follow these steps:
