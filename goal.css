@@ -1,0 +1,112 @@
+#contain
+{
+    width: 70%;
+    margin: 20px auto;
+    border: 0;
+}
+.flag
+{
+    max-width: 100%;
+    width: 70px;
+    float: none !important;
+    display: block !important;
+    margin: auto !important;
+    vertical-align: middle;
+}
+.liveDiv
+{
+    float: none;
+    width: 100%;
+    padding: 4px;
+    font-family: Arial, Helvetica, sans-serif !important;
+    color: #333 !important;
+    display: none;
+    font-size: 2em !important;
+}
+.liveDiv *
+{
+    color: #333 !important;
+}
+.liveDiv .recordTable
+{
+    width: 70%;
+    border:solid 1px #666;
+    color: #333 !important;
+}
+.liveDiv .recordTable td
+{
+    border:solid 1px #666;
+}
+.liveDiv .recordTable *
+{
+    color: #333 !important;
+}
+.goalBack
+{
+    text-align: center;
+    color: #fff !important;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    z-index: 99999;
+}
+.goalContain
+{
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+    float: none;
+    margin: 2em auto;
+    color: white !important;
+    font-family: consolas, monospace !important;
+    text-align: center;
+    font-size: 2em;
+}
+.goal
+{
+    font-size: 2em;
+    text-shadow: 0 3px #000 !important;
+    color: rgb(31, 221, 14) !important;
+    letter-spacing: 5px;
+    animation: goal .5s alternate .3s infinite forwards;
+    font-family: Arial, Helvetica, sans-serif !important;
+    text-align: center;
+    font-weight: 700;
+}
+.recordTable
+{
+    text-align: center !important;
+    font-size: inherit !important;
+    border:0;
+    padding: 8px;
+    margin: 8px auto;
+    border-collapse: collapse;
+}
+.recordTable td
+{
+    text-align: center !important;
+    font-size: inherit !important;
+    color: #fff !important;
+    padding: 8px;
+    width: 50%;
+}
+.headLive
+{
+    padding-left: 12px !important;
+}
+
+@keyframes goal
+{
+    0%
+    {
+        font-size: 2em;
+    }
+
+    100%
+    {
+        font-size: 2.5em;
+    }
+}
