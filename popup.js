@@ -25,9 +25,9 @@ else
 
 function trigger_live()
 {
-    let conscise, obj
-    chrome.storage.local.get('global_event', function (data) {
-        conscise = data.global_event
+    let conscise = [], obj = {}
+    chrome.storage.local.get('new_event', function (data) {
+        conscise = data.new_event
 
         // console.log(global_event)
 

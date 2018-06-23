@@ -35,6 +35,12 @@ function do_app() {
 
                 console.log(live_matches_scores)
 
+                chrome.storage.local.set(
+                    {
+                        'new_event': live_matches_scores
+                    }
+                )
+
                 if (typeof (old_live) === "undefined") {
                     old_live = live_matches_scores
                 }

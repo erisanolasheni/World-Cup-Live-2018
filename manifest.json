@@ -7,11 +7,12 @@
     {
         "scripts" :
         [
-           "background.js", "live-background.js", 
-           "jsonQ.min.js",
-           "lodash.js",
-           "difference.js",
-           "moment.js"
+            "moment.js",
+            "jsonQ.min.js",
+            "lodash.js",
+            "difference.js",
+           "background.js", 
+           "live-background.js"
         ],
         "persistent" : false
     },
