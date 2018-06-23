@@ -1,7 +1,7 @@
 #  World Cup Live 2018 Chrome Extension
 <img src="https://i.imgur.com/LqWbEEW.png" alt="World Cup Live 2018 Logo" /><br />World Cup Live 2018 is a fantastic chrome browser extension that keeps you up-to-date to the current 2018 World Cup fixtures including live score updates and more!
 
-##How It Works
+## How It Works
 The World Cup Live 2018 browser extension give you a realtime live score update by popping up on your screen whenever you are on a website, this only pops out when a goal has been scored to notify you about the score counts. You can also check out the match updates including fixtures when you click on the extension icon.
 
 ## Installation
@@ -15,5 +15,5 @@ If you have downloaded this extension using the 'Download Zip' option, you will 
 To make World Cup Live 2018 extension working, you need to activate it by click the switch at the bottom right side if the extension pane, this extestion should be automatically added to your active extensions lists in your browser menu bar, test it by clicking the icon.<br/>
 <img src="https://i.imgur.com/g5gbZNd.png" alt="World Cup Live 2018 Logo" />
 
-## Donate
+## Donation
 If you are passionate about this 2018 FIFA World Cup and really love this browser extension, please help contribute and improve by donating >> [https://www.patreon.com/posts/19622490/](https://www.patreon.com/posts/19622490/)<br/>Thanks for doing that!
