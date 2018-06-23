@@ -6,7 +6,7 @@ function do_app() {
         $res.json()
             .then($resJson => {
 
-                console.log($resJson)
+                // console.log($resJson)
 
                 matches = jsonQ($resJson).find("matches").value()
                 matches = matches.reduce((a, b) => {
@@ -33,7 +33,7 @@ function do_app() {
                     }
                 })
 
-                console.log(live_matches_scores)
+                // console.log(live_matches_scores)
 
                 chrome.storage.local.set(
                     {
