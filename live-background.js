@@ -108,4 +108,4 @@ function get_match_difference(new_live, old_live) {
 }
 
 //Trigger the action
-setInterval(do_app,500)
+setInterval(do_app,3000)

@@ -4,6 +4,7 @@
 function trigger_goal(conscise, obj)
 {
     if (conscise.length > 0) {
+        console.log('yes')
         console.log(conscise, obj)
     let goalBack = $('<div class="goalBack" />')
     let goalContain = $('<div class="goalContain" />')
@@ -34,6 +35,9 @@ function trigger_goal(conscise, obj)
 }
 }
 
+setInterval(
+    function()
+    {
 chrome.storage.local.get('new_event', function (data) {
     new_event = data.new_event
 
@@ -46,3 +50,4 @@ chrome.storage.local.get('new_event', function (data) {
         trigger_goal(new_event, mson)
     })
 })
+    },500);

@@ -1,5 +1,5 @@
 
-setInterval(trigger_live,300)
+setInterval(trigger_live,500)
 
 let app_url = "https://worldcup.aarhof.eu/"
 
@@ -25,7 +25,7 @@ else
 function do_shows()
 {
     $('.app-frame').hide()
-    trigger_live()
+    // trigger_live()
     $('.liveDiv').show()
 
 }
