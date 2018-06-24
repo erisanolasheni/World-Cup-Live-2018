@@ -1,5 +1,5 @@
 
-trigger_live()
+setInterval(trigger_live,300)
 
 let app_url = "https://worldcup.aarhof.eu/"
 
@@ -19,17 +19,23 @@ select_menu.onchange = function()
 }
 else
 {
+    do_shows()
+}
+}
+function do_shows()
+{
+    $('.app-frame').hide()
     trigger_live()
-}
-}
+    $('.liveDiv').show()
 
+}
 function trigger_live()
 {
     let conscise = [], obj = {}
-    chrome.storage.local.get('new_event', function (data) {
-        conscise = data.new_event
+    chrome.storage.local.get('global_event', function (data) {
+        conscise = data.global_event
 
-        // console.log(global_event)
+        // console.log(conscise)
 
         chrome.storage.local.get('mson', function (data) {
             obj = data.mson
@@ -37,7 +43,6 @@ function trigger_live()
             // console.log(mson)
             // trigger_live(global_event, mson)
             
-            $('.app-frame').hide()
             let headLive = $('<h1 class="headLive">Live Matches</h1>')
             let recordTable = $('<table class="recordTable" />')
     if(conscise.length==0)
@@ -57,7 +62,6 @@ function trigger_live()
 $('.liveDiv').html('')
 $('.liveDiv').append(headLive)
 $('.liveDiv').append(recordTable)
-$('.liveDiv').show()
 // console.log(conscise.length)
 })
 })

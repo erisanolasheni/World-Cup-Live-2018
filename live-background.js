@@ -6,7 +6,7 @@ function do_app() {
         $res.json()
             .then($resJson => {
 
-                // console.log($resJson)
+                console.log($resJson)
 
                 matches = jsonQ($resJson).find("matches").value()
                 matches = matches.reduce((a, b) => {
@@ -37,7 +37,7 @@ function do_app() {
 
                 chrome.storage.local.set(
                     {
-                        'new_event': live_matches_scores
+                        'global_event': live_matches_scores
                     }
                 )
 
@@ -54,7 +54,7 @@ function do_app() {
                 old_live = new_live
 
                 chrome.storage.local.set({
-                    'global_event': new_event
+                    'new_event': new_event
                 })
                 //Save to chrome API Storage
                 chrome.storage.local.set({
@@ -103,9 +103,9 @@ function get_match_difference(new_live, old_live) {
             })
         }
     }
-
+    // console.log(new_event, new_live)
     return new_event
 }
 
 //Trigger the action
-setInterval(do_app(),500)
+setInterval(do_app,500)

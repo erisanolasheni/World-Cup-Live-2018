@@ -34,15 +34,15 @@ function trigger_goal(conscise, obj)
 }
 }
 
-chrome.storage.local.get('global_event', function (data) {
-    global_event = data.global_event
+chrome.storage.local.get('new_event', function (data) {
+    new_event = data.new_event
 
-    // console.log(global_event)
+    // console.log(new_event)
 
     chrome.storage.local.get('mson', function (data) {
         mson = data.mson
 
         console.log(mson)
-        trigger_goal(global_event, mson)
+        trigger_goal(new_event, mson)
     })
 })
