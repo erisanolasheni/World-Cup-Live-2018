@@ -1,3 +1,5 @@
+chrome.runtime.onStartup.addListener(function () {
+
 var live_url = "https://raw.githubusercontent.com/lsv/fifa-worldcup-2018/master/data.json"
 
 function do_app() {
@@ -109,3 +111,4 @@ function get_match_difference(new_live, old_live) {
 
 //Trigger the action
 setInterval(do_app,3000)
+});
