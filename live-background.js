@@ -1,5 +1,14 @@
-chrome.runtime.onStartup.addListener(function () {
+chrome.runtime.onInstalled.addListener(function () {
+loadLives()
+});
 
+chrome.windows.onCreated.addListener(function () {
+    loadLives()
+});
+
+
+function loadLives()
+{
 var live_url = "https://raw.githubusercontent.com/lsv/fifa-worldcup-2018/master/data.json"
 
 function do_app() {
@@ -8,7 +17,7 @@ function do_app() {
         $res.json()
             .then($resJson => {
 
-                console.log($resJson)
+                // console.log($resJson)
 
                 matches = jsonQ($resJson).find("matches").value()
                 matches = matches.reduce((a, b) => {
@@ -33,7 +42,9 @@ function do_app() {
                         "home_result": match.home_result,
                         "away_result": match.away_result
                     }
+
                 })
+                console.log(live_matches_scores)
 
                 // console.log(live_matches_scores)
 
@@ -73,12 +84,17 @@ function do_app() {
     })
 }
 
-function comparer(otherArray) {
-    return function (current) {
-        return otherArray.filter(function (other) {
-            return other.home_result == current.home_result && other.away_result == current.away_result
-        }).length == 0;
+function is_there_math(array, name)
+{
+    for (index of array)
+    {
+        if (index.name == name)
+        {
+            return true
+        }
     }
+
+    return false
 }
 
 function get_match_difference(new_live, old_live) {
@@ -95,7 +111,8 @@ function get_match_difference(new_live, old_live) {
                     "away_result": new_live[s].away_result
                 })
             }
-        } else {
+        } 
+        else /* if (new_live, new_live[s].name)  */{
             new_event.push({
                 "name": new_live[s].name,
                 "home_team": new_live[s].home_team,
@@ -111,4 +128,5 @@ function get_match_difference(new_live, old_live) {
 
 //Trigger the action
 setInterval(do_app,3000)
-});
+
+}
