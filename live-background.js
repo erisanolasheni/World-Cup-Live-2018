@@ -44,7 +44,7 @@ function do_app() {
                     }
 
                 })
-                console.log(live_matches_scores)
+                // console.log(live_matches_scores)
 
                 // console.log(live_matches_scores)
 
@@ -112,7 +112,7 @@ function get_match_difference(new_live, old_live) {
                 })
             }
         } 
-        else /* if (new_live, new_live[s].name)  */{
+        else {
             new_event.push({
                 "name": new_live[s].name,
                 "home_team": new_live[s].home_team,

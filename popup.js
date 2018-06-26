@@ -12,12 +12,13 @@ let app_frame = document.querySelector(".app-frame")
 select_menu.onchange = function()
 {   if(select_menu.value.match('#'))
 {
+    $('.liveDiv').hide()
     $('.app-frame').show()
     frame_url = `${app_url}${select_menu.value}/`
     // alert(frame_url)
     app_frame['src'] = frame_url
 }
-else
+else if(select_menu.value == "live")
 {
     do_shows()
 }
